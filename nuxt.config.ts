@@ -11,7 +11,7 @@ export default defineNuxtConfig({
         { hid: 'description', name: 'description', content: '' }
       ],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/imgs/favicon.png'}
+        { rel: 'icon', type: 'image/x-icon', href: '/imgs/favicon.png' }
       ],
     },
     buildAssetsDir: '/assets',
@@ -24,7 +24,17 @@ export default defineNuxtConfig({
   },
   devtools: { enabled: true },
   ssr: false,
-  modules: ['usebootstrap'],
+  modules: ['usebootstrap', '@nuxtjs/i18n'],
+  i18n: {
+    locales: [
+      { code: 'en', file: 'en.json' },
+      { code: 'zh', file: 'zh.json' }
+    ],
+    lazy: true,
+    langDir: 'locales',
+    defaultLocale: 'zh',
+    strategy: 'prefix_except_default',
+  },
   usebootstrap: {
     scss: true,
     image: false,
@@ -38,23 +48,9 @@ export default defineNuxtConfig({
     pwa: false,
     aos: false,
     echarts: false,
-   },
-   build: {
+  },
+  build: {
     analyze: true,
     transpile: ['bootstrap'],
-  },
-  webpack: {
-    optimizeCSS: true,
-    optimization: {
-      chunkIds: 'named',
-      mergeDuplicateChunks: true,
-      nodeEnv: 'production',
-      CommonsChunk: {
-        name: 'commons',
-        filename: 'commons.js',
-        async: true,
-      },
-      minimize: true,
-    },
   },
 })

@@ -1,0 +1,59 @@
+{
+    "welcome": "Welcome to Taichu Hub",
+    "slogan": "The Nexus of Original Energy",
+    "nav": {
+        "home": "Home",
+        "research": "Research",
+        "solutions": "Solutions",
+        "tech_innovation": "Co-Creation",
+        "social_experiment": "Experiments"
+    },
+    "hero": {
+        "title": "Taichu Hub",
+        "subtitle": "Connecting Ancient Wisdom with Future Intelligence"
+    },
+    "sections": {
+        "mission": {
+            "title": "Our Mission",
+            "text": "At Taichu Lab, we bridge the gap between ancient eastern philosophy and frontier technology. We believe that true intelligence arises not just from computation, but from the deep understanding of the primordial energy—Qi—that connects all things."
+        },
+        "recent_insights": "Recent Insights",
+        "partners": "Our Partners"
+    },
+    "research": {
+        "items": [
+            {
+                "title": "Consciousness Field Theory",
+                "desc": "Proposing a new mathematical framework where consciousness is a fundamental property of space-time, interacting with matter via quantum coherence."
+            },
+            {
+                "title": "Generative Qi Models",
+                "desc": "AI models trained on the principles of Yin and Yang dynamics to generate self-balancing, harmonious algorithmic outputs."
+            },
+            {
+                "title": "Symbiotic Intelligence",
+                "desc": "Interfaces designed to merge biological and digital cognition, enhancing human intuition rather than replacing it."
+            },
+            {
+                "title": "Ethical alignment in AGI",
+                "desc": "Ensuring that the development of Artificial General Intelligence remains aligned with universal human values and Daoist principles."
+            }
+        ]
+    },
+    "solutions": {
+        "items": [
+            {
+                "title": "Taichu Brain",
+                "desc": "An enterprise-grade cognitive engine that uses causal reasoning to solve complex logistic and strategic problems."
+            },
+            {
+                "title": "Flux Analytics",
+                "desc": "Real-time data visualization tools that reveal the 'flow' of information within an organization, highlighting bottlenecks and energy leaks."
+            },
+            {
+                "title": "Harmony OS for IoT",
+                "desc": "A lightweight, decentralized operating system for smart devices that optimizes energy consumption through swarm intelligence."
+            }
+        ]
+    }
+}
