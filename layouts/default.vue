@@ -2,74 +2,167 @@
 @import "tailwindcss";
 
 .navbar-taichu {
-    background-color: var(--color-primordial-black) !important;
-    border-bottom: 1px solid var(--color-void-grey);
-    padding: 1rem 0;
+    background-color: rgba(10, 10, 15, 0.95) !important;
+    border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 0.5rem 0;
+}
+
+@media (min-width: 1024px) {
+    .navbar-taichu {
+        padding: 0.75rem 0;
+    }
 }
 
 .nav-link {
-    color: var(--color-starlight-white) !important;
-    font-family: var(--font-serif);
-    margin: 0 0.5rem;
-    position: relative;
+    color: #9ca3af !important;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
     transition: color 0.3s ease;
 }
 
 .nav-link:hover, .nav-link.active {
-    color: var(--color-qi-gold) !important;
+    color: var(--color-gold) !important;
 }
 
-.navbar-brand img {
-    height: 40px;
-    filter: brightness(0.9);
+/* Mobile menu styles */
+.mobile-menu-open {
+    max-height: 500px;
+    opacity: 1;
+}
+
+.mobile-menu-closed {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+@media (max-width: 1023px) {
+    .navbar-collapse-mobile {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(10, 10, 15, 0.98);
+        border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+        transition: all 0.3s ease;
+        backdrop-filter: blur(20px);
+    }
+}
+
+/* Brand gradient */
+.brand-gradient {
+    background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-jade) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Footer styles */
+.footer-glow {
+    box-shadow: 0 -20px 80px rgba(0, 212, 255, 0.05);
 }
 </style>
 
 <template>
-    <div class="min-h-screen bg-black text-white">
-        <Navbar expand="lg" class="navbar-taichu w-full border-b border-gray-800 bg-black/95 backdrop-blur fixed top-0 left-0 z-50 transition-all duration-300">
-            <div class="w-full px-6 lg:px-12 h-20 flex items-center justify-between">
-                <NavbarBrand to="/" class="flex items-center gap-3 group">
-                     <div class="w-8 h-8 rounded-full bg-gradient-to-tr from-jade-900 to-gold-900 border border-gold/30 group-hover:border-gold/60 transition-colors"></div>
-                    <span class="text-xl font-sans font-bold tracking-tight text-white group-hover:text-gold transition-colors">Taichu Hub</span>
+    <div class="min-h-screen bg-void text-white" style="background-color: #0a0a0f;">
+        <Navbar expand="lg" class="navbar-taichu w-full fixed top-0 left-0 z-50 transition-all duration-300">
+            <div class="w-full px-4 sm:px-6 lg:px-12 h-16 lg:h-18 flex items-center justify-between">
+                <NavbarBrand to="/" class="flex items-center gap-2 sm:gap-3 group">
+                    <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-gradient-to-tr from-gold to-jade flex items-center justify-center" style="background: linear-gradient(135deg, #00d4ff, #00ff88);">
+                        <span class="text-black font-bold text-sm">太</span>
+                    </div>
+                    <span class="text-lg sm:text-xl font-bold tracking-tight brand-gradient">{{ $t('brand') }}</span>
                 </NavbarBrand>
                 
-                <div class="flex items-center gap-6 lg:order-3">
-                    <div class="hidden md:flex items-center gap-2">
+                <div class="flex items-center gap-3 sm:gap-6 lg:order-3">
+                    <!-- Desktop language switcher -->
+                    <div class="hidden lg:flex items-center gap-0.5 px-0.5 py-0.5 rounded-full border border-gray-800">
                          <button 
                             v-for="locale in availableLocales" 
                             :key="locale.code"
                             @click="setLocale(locale.code)"
-                            class="text-xs font-sans font-medium px-2 py-1 rounded transition-colors"
-                            :class="locale.code === $i18n.locale ? 'text-gold bg-gold/10' : 'text-gray-500 hover:text-white'"
+                            class="text-[0.4rem] font-semibold tracking-wide px-1 py-0.5 rounded-full transition-all duration-300"
+                            :class="locale.code === $i18n.locale ? 'text-black' : 'text-gray-500 hover:text-white'"
+                            :style="locale.code === $i18n.locale ? 'background: linear-gradient(135deg, #00d4ff, #00ff88); border-radius: 9999px;' : ''"
                         >
                             {{ locale.code.toUpperCase() }}
                         </button>
                     </div>
-                    <NavbarToggler class="lg:hidden border-0 text-white p-0" />
+                    <NavbarToggler @click="toggleMobileMenu" class="lg:hidden border-0 text-white p-2 hover:bg-white/5 rounded-lg transition-colors">
+                        <svg v-if="!mobileMenuOpen" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <svg v-else xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </NavbarToggler>
                 </div>
 
-                <NavbarCollapse class="lg:flex-grow-0">
-                    <NavbarNavList class="flex flex-col lg:flex-row gap-2 lg:gap-8 items-center">
+                <!-- Desktop Navigation -->
+                <NavbarCollapse class="hidden lg:flex lg:flex-grow-0 lg:ml-16 xl:ml-24">
+                    <NavbarNavList class="flex flex-row gap-8 xl:gap-10 items-center">
                         <NavItem v-for="link in ['home', 'research', 'solutions', 'tech_innovation', 'social_experiment']" :key="link">
                             <NavLink :to="link === 'home' ? '/' : '/' + link.replace('_', '-')" 
                                      active-class="text-gold"
-                                     class="text-sm font-sans font-medium text-gray-400 hover:text-white transition-colors py-2 lg:py-0">
+                                     class="nav-link">
                                 {{ $t(`nav.${link}`) }}
                             </NavLink>
                         </NavItem>
                     </NavbarNavList>
                 </NavbarCollapse>
             </div>
+            
+            <!-- Mobile Navigation -->
+            <div class="lg:hidden navbar-collapse-mobile" :class="mobileMenuOpen ? 'mobile-menu-open' : 'mobile-menu-closed'">
+                <div class="px-4 py-4 space-y-1">
+                    <NuxtLink 
+                        v-for="link in ['home', 'research', 'solutions', 'tech_innovation', 'social_experiment']" 
+                        :key="link"
+                        :to="link === 'home' ? '/' : '/' + link.replace('_', '-')"
+                        @click="mobileMenuOpen = false"
+                        class="block px-4 py-3 text-base font-medium text-gray-300 hover:text-white rounded-lg transition-all duration-300"
+                        style="border-left: 2px solid transparent;"
+                        :style="$route.path === (link === 'home' ? '/' : '/' + link.replace('_', '-')) ? 'border-left-color: #00d4ff; color: #00d4ff; background: rgba(0, 212, 255, 0.05);' : ''"
+                    >
+                        {{ $t(`nav.${link}`) }}
+                    </NuxtLink>
+                    
+                    <!-- Mobile language switcher -->
+                    <div class="flex items-center gap-3 px-4 py-4 border-t border-gray-800/50 mt-3">
+                        <span class="text-xs text-gray-500">Language:</span>
+                        <div class="flex items-center gap-0.5 px-0.5 py-0.5 rounded-full border border-gray-800">
+                            <button 
+                                v-for="locale in availableLocales" 
+                                :key="locale.code"
+                                @click="setLocale(locale.code)"
+                            class="text-[0.45rem] font-semibold tracking-wide px-1 py-0.5 rounded-full transition-all duration-300"
+                            :class="locale.code === $i18n.locale ? 'text-black' : 'text-gray-500 hover:text-white'"
+                            :style="locale.code === $i18n.locale ? 'background: linear-gradient(135deg, #00d4ff, #00ff88); border-radius: 9999px;' : ''"
+                            >
+                                {{ locale.code.toUpperCase() }}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </Navbar>
         
-        <main class="w-full pt-20">
+        <main class="w-full pt-16 lg:pt-18">
             <slot />
         </main>
 
-        <footer class="py-12 bg-void text-center border-t border-jade/30 mt-20">
+        <footer class="py-12 sm:py-16 text-center border-t border-gray-800/50 footer-glow" style="background-color: #0a0a0f;">
             <Container>
-                <p class="text-gray-500 font-serif text-sm">© {{ new Date().getFullYear() }} {{ $t('welcome') }}</p>
+                <div class="flex flex-col items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-gold to-jade flex items-center justify-center mb-2" style="background: linear-gradient(135deg, #00d4ff, #00ff88);">
+                        <span class="text-black font-bold">太</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">{{ $t('footer.copyright') }}</p>
+                    <p class="text-gray-600 text-xs">{{ $t('footer.tagline') }}</p>
+                </div>
             </Container>
         </footer>
     </div>
@@ -80,5 +173,17 @@ const { locale, locales, setLocale } = useI18n()
 
 const availableLocales = computed(() => {
   return locales.value
+})
+
+const mobileMenuOpen = ref(false)
+
+const toggleMobileMenu = () => {
+  mobileMenuOpen.value = !mobileMenuOpen.value
+}
+
+// Close mobile menu on route change
+const route = useRoute()
+watch(() => route.path, () => {
+  mobileMenuOpen.value = false
 })
 </script>

@@ -1,59 +1,171 @@
 {
-    "welcome": "欢迎来到太初实验室",
-    "slogan": "探索未知，始于太初",
-    "nav": {
-        "home": "首页",
-        "research": "研究方向",
-        "solutions": "解决方案",
-        "tech_innovation": "科技共创",
-        "social_experiment": "社会实验"
+  "brand": "太初元启",
+  "slogan": "探索智能的原点，启迪未来的无限",
+  "hero": {
+    "title": "太初元启",
+    "subtitle": "连接古老智慧与未来智能"
+  },
+  "nav": {
+    "home": "首页",
+    "research": "研究方向",
+    "solutions": "解决方案",
+    "tech_innovation": "科技共创",
+    "social_experiment": "社会实验"
+  },
+  "sections": {
+    "mission": {
+      "title": "我们的使命",
+      "subtitle": "连接智慧与代码",
+      "text": "在太初元启，我们致力于以此岸的科学技术，探索彼岸的智慧源头。我们相信，真正的智能不仅源于计算，更源于对连接万物的元气——「气」的深刻理解。"
     },
-    "hero": {
-        "title": "太初元启",
-        "subtitle": "点燃内心的黎明"
+    "recent_insights": "最新洞见",
+    "explore": "探索领域"
+  },
+  "stats": {
+    "research_projects": "研究项目",
+    "global_partners": "全球合作伙伴",
+    "data_processed": "数据处理量",
+    "system_uptime": "系统运行"
+  },
+  "features": {
+    "infinite_potential": {
+      "title": "无限潜能",
+      "desc": "通过古老框架开启算法能力的新维度，探索智能的边界。"
     },
-    "sections": {
-        "mission": {
-            "title": "我们的使命",
-            "text": "在太初实验室，我们致力于以此岸的科学技术，探索彼岸的智慧源头。我们相信，真正的智能不仅源于计算，更源于对连接万物的元气——“气”的深刻理解。"
-        },
-        "recent_insights": "最新洞见",
-        "partners": "合作伙伴"
+    "dynamic_balance": {
+      "title": "动态平衡",
+      "desc": "创建能够像自然生物一样自我调节和适应的智能系统。"
     },
-    "research": {
-        "items": [
-            {
-                "title": "意识场论",
-                "desc": "提出一种新的数学框架，将意识视为时空的基本属性，通过量子相干性与物质相互作用。"
-            },
-            {
-                "title": "生成式元气模型",
-                "desc": "基于阴阳动态原理训练的AI模型，旨在生成自我平衡、和谐的算法输出。"
-            },
-            {
-                "title": "共生智能",
-                "desc": "旨在融合生物认知与数字认知的接口，增强人类直觉而非取而代之。"
-            },
-            {
-                "title": "AGI伦理对齐",
-                "desc": "确保通用人工智能的发展始终与普世人类价值和道家原则保持一致。"
-            }
-        ]
+    "human_centric": {
+      "title": "以人为本",
+      "desc": "增强人类意图而非取代它，让技术服务于人类福祉。"
     },
-    "solutions": {
-        "items": [
-            {
-                "title": "太初大脑",
-                "desc": "企业级认知引擎，利用因果推理解决复杂的物流和战略问题。"
-            },
-            {
-                "title": "流变分析",
-                "desc": "实时数据可视化工具，揭示组织内部信息的“流动”，凸显瓶颈与能量流失。"
-            },
-            {
-                "title": "万物和谐OS",
-                "desc": "用于智能设备的轻量级去中心化操作系统，通过群体智能优化能源消耗。"
-            }
-        ]
+    "intelligent_evolution": {
+      "title": "智能进化",
+      "desc": "构建能够持续学习、自我优化并跨生态协同进化的智能体系。"
     }
+  },
+  "research": {
+    "title": "研究方向",
+    "subtitle": "探索智能边界",
+    "desc": "我们的研究融合东方哲学与现代科技，探索人工智能的本质与未来。",
+    "page_desc": "通过古老框架开启算法能力的新维度。",
+    "intro": "太初元启的研究致力于突破传统AI的边界，将古老智慧与现代技术相结合，创造真正理解人类的智能系统。",
+    "areas": {
+      "qi_computing": {
+        "title": "气场计算",
+        "desc": "探索能量场与信息处理的关系，开发基于自然能量流动的新型计算范式。"
+      },
+      "harmony_ai": {
+        "title": "和谐智能",
+        "desc": "构建与自然协调共存的AI系统，实现技术与生态的完美平衡。"
+      },
+      "wisdom_network": {
+        "title": "智慧网络",
+        "desc": "建立跨文化的知识传承体系，连接东西方智慧的精华。"
+      },
+      "consciousness": {
+        "title": "意识探索",
+        "desc": "研究人类意识的本质，探索机器意识的可能性与边界。"
+      },
+      "quantum_mind": {
+        "title": "量子心智",
+        "desc": "将量子计算原理应用于认知科学，探索思维的量子本质。"
+      },
+      "bio_ai": {
+        "title": "生物启发AI",
+        "desc": "从自然生命系统中汲取灵感，创造更具适应性的智能算法。"
+      }
+    }
+  },
+  "solutions": {
+    "title": "解决方案",
+    "subtitle": "智慧落地应用",
+    "desc": "将前沿研究转化为实际应用，为企业和社会创造价值。",
+    "intro": "我们的解决方案将尖端研究成果转化为实际应用，帮助企业和社会解决复杂挑战。",
+    "categories": {
+      "enterprise": {
+        "title": "企业智能",
+        "desc": "为企业提供定制化的AI解决方案，提升运营效率和决策质量。"
+      },
+      "healthcare": {
+        "title": "健康科技",
+        "desc": "结合传统医学智慧与现代AI，提供个性化的健康管理方案。"
+      },
+      "education": {
+        "title": "智慧教育",
+        "desc": "创新教育模式，让每个学习者都能获得最适合自己的学习路径。"
+      },
+      "sustainability": {
+        "title": "可持续发展",
+        "desc": "利用AI技术推动环境保护和资源优化，建设绿色未来。"
+      }
+    }
+  },
+  "tech_innovation": {
+    "title": "科技共创",
+    "subtitle": "开放协作平台",
+    "desc": "共同创造未来的智能协议，让创新惠及每一个人。",
+    "intro": "太初元启相信开放协作的力量。我们建立了一个全球化的创新平台，汇聚各领域的智慧，共同探索技术的边界。",
+    "programs": {
+      "open_source": {
+        "title": "开源计划",
+        "desc": "我们的核心算法和工具向全球开发者开放，共同推动技术进步。"
+      },
+      "incubator": {
+        "title": "创新孵化",
+        "desc": "为有潜力的创新项目提供资源、指导和资金支持。"
+      },
+      "research_collab": {
+        "title": "研究合作",
+        "desc": "与全球顶尖研究机构和大学建立合作关系，共同攻克技术难题。"
+      },
+      "community": {
+        "title": "开发者社区",
+        "desc": "建立活跃的技术社区，促进知识分享和协作创新。"
+      }
+    }
+  },
+  "social_experiment": {
+    "title": "社会实验",
+    "subtitle": "探索新可能",
+    "desc": "在真实场景中验证和迭代我们的理念，创造积极的社会影响。",
+    "intro": "理论需要实践的检验。我们在真实世界中进行各种社会实验，探索技术如何更好地服务人类社会。",
+    "experiments": {
+      "smart_village": {
+        "title": "智慧乡村",
+        "desc": "在偏远地区部署智能技术，缩小城乡数字鸿沟。"
+      },
+      "elder_care": {
+        "title": "银发关怀",
+        "desc": "为老年群体设计的智能陪伴和健康监测系统。"
+      },
+      "green_city": {
+        "title": "绿色城市",
+        "desc": "利用AI优化城市能源使用和交通流动，打造低碳未来。"
+      },
+      "cultural_bridge": {
+        "title": "文化桥梁",
+        "desc": "通过AI技术促进跨文化理解和交流，建设和谐世界。"
+      }
+    }
+  },
+  "cta": {
+    "explore_research": "探索研究",
+    "our_mission": "了解使命",
+    "view_all_domains": "查看所有领域",
+    "explore": "探索",
+    "discover": "发现",
+    "join_us": "加入我们",
+    "learn_more": "了解更多",
+    "ready_title": "准备好开启智能之旅了吗？",
+    "ready_desc": "加入我们，一起探索智能的边界，创造更美好的未来。",
+    "start_exploring": "开始探索",
+    "contact_us": "联系我们",
+    "back_home": "返回首页"
+  },
+  "footer": {
+    "copyright": "© 2025 太初元启",
+    "tagline": "启迪未来智能"
+  }
 }

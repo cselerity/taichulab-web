@@ -1,59 +1,171 @@
 {
-    "welcome": "Welcome to Taichu Hub",
-    "slogan": "The Nexus of Original Energy",
-    "nav": {
-        "home": "Home",
-        "research": "Research",
-        "solutions": "Solutions",
-        "tech_innovation": "Co-Creation",
-        "social_experiment": "Experiments"
+  "brand": "Taichu Lab",
+  "slogan": "Exploring the Origin of Intelligence, Illuminating Infinite Futures",
+  "hero": {
+    "title": "Taichu Lab",
+    "subtitle": "Bridging Ancient Wisdom with Future Intelligence"
+  },
+  "nav": {
+    "home": "Home",
+    "research": "Research",
+    "solutions": "Solutions",
+    "tech_innovation": "Co-Creation",
+    "social_experiment": "Experiments"
+  },
+  "sections": {
+    "mission": {
+      "title": "Our Mission",
+      "subtitle": "Connecting Wisdom & Code",
+      "text": "At Taichu Lab, we bridge the gap between cutting-edge technology and timeless wisdom. We believe true intelligence transcends computation—it emerges from understanding the primordial energy that connects all things."
     },
-    "hero": {
-        "title": "Taichu Hub",
-        "subtitle": "Connecting Ancient Wisdom with Future Intelligence"
+    "recent_insights": "Latest Insights",
+    "explore": "Explore Domains"
+  },
+  "stats": {
+    "research_projects": "Research Projects",
+    "global_partners": "Global Partners",
+    "data_processed": "Data Processed",
+    "system_uptime": "System Uptime"
+  },
+  "features": {
+    "infinite_potential": {
+      "title": "Infinite Potential",
+      "desc": "Unlocking new dimensions of algorithmic capability through ancient frameworks, exploring the boundaries of intelligence."
     },
-    "sections": {
-        "mission": {
-            "title": "Our Mission",
-            "text": "At Taichu Lab, we bridge the gap between ancient eastern philosophy and frontier technology. We believe that true intelligence arises not just from computation, but from the deep understanding of the primordial energy—Qi—that connects all things."
-        },
-        "recent_insights": "Recent Insights",
-        "partners": "Our Partners"
+    "dynamic_balance": {
+      "title": "Dynamic Balance",
+      "desc": "Creating intelligent systems that self-regulate and adapt like living organisms in nature."
     },
-    "research": {
-        "items": [
-            {
-                "title": "Consciousness Field Theory",
-                "desc": "Proposing a new mathematical framework where consciousness is a fundamental property of space-time, interacting with matter via quantum coherence."
-            },
-            {
-                "title": "Generative Qi Models",
-                "desc": "AI models trained on the principles of Yin and Yang dynamics to generate self-balancing, harmonious algorithmic outputs."
-            },
-            {
-                "title": "Symbiotic Intelligence",
-                "desc": "Interfaces designed to merge biological and digital cognition, enhancing human intuition rather than replacing it."
-            },
-            {
-                "title": "Ethical alignment in AGI",
-                "desc": "Ensuring that the development of Artificial General Intelligence remains aligned with universal human values and Daoist principles."
-            }
-        ]
+    "human_centric": {
+      "title": "Human-Centric",
+      "desc": "Technology that amplifies human intention, not replaces it, serving human wellbeing."
     },
-    "solutions": {
-        "items": [
-            {
-                "title": "Taichu Brain",
-                "desc": "An enterprise-grade cognitive engine that uses causal reasoning to solve complex logistic and strategic problems."
-            },
-            {
-                "title": "Flux Analytics",
-                "desc": "Real-time data visualization tools that reveal the 'flow' of information within an organization, highlighting bottlenecks and energy leaks."
-            },
-            {
-                "title": "Harmony OS for IoT",
-                "desc": "A lightweight, decentralized operating system for smart devices that optimizes energy consumption through swarm intelligence."
-            }
-        ]
+    "intelligent_evolution": {
+      "title": "Intelligent Evolution",
+      "desc": "Designing living intelligence that continuously learns, self-optimizes, and evolves across ecosystems."
     }
+  },
+  "research": {
+    "title": "Research",
+    "subtitle": "Exploring Intelligence Frontiers",
+    "desc": "Our research merges Eastern philosophy with modern technology to explore the essence and future of artificial intelligence.",
+    "page_desc": "Unlocking new dimensions of algorithmic capability through ancient frameworks.",
+    "intro": "Taichu Lab's research is dedicated to breaking through the boundaries of traditional AI, combining ancient wisdom with modern technology to create intelligent systems that truly understand humanity.",
+    "areas": {
+      "qi_computing": {
+        "title": "Qi Computing",
+        "desc": "Exploring the relationship between energy fields and information processing, developing new computing paradigms based on natural energy flow."
+      },
+      "harmony_ai": {
+        "title": "Harmony AI",
+        "desc": "Building AI systems that coexist in harmony with nature, achieving perfect balance between technology and ecology."
+      },
+      "wisdom_network": {
+        "title": "Wisdom Network",
+        "desc": "Establishing cross-cultural knowledge inheritance systems, connecting the essence of Eastern and Western wisdom."
+      },
+      "consciousness": {
+        "title": "Consciousness Exploration",
+        "desc": "Researching the nature of human consciousness, exploring the possibilities and boundaries of machine consciousness."
+      },
+      "quantum_mind": {
+        "title": "Quantum Mind",
+        "desc": "Applying quantum computing principles to cognitive science, exploring the quantum nature of thought."
+      },
+      "bio_ai": {
+        "title": "Bio-Inspired AI",
+        "desc": "Drawing inspiration from natural living systems to create more adaptive intelligent algorithms."
+      }
+    }
+  },
+  "solutions": {
+    "title": "Solutions",
+    "subtitle": "Wisdom in Action",
+    "desc": "Transforming frontier research into practical applications that create value for enterprises and society.",
+    "intro": "Our solutions transform cutting-edge research into practical applications, helping enterprises and society solve complex challenges.",
+    "categories": {
+      "enterprise": {
+        "title": "Enterprise Intelligence",
+        "desc": "Providing customized AI solutions for enterprises to enhance operational efficiency and decision quality."
+      },
+      "healthcare": {
+        "title": "Health Technology",
+        "desc": "Combining traditional medical wisdom with modern AI to provide personalized health management solutions."
+      },
+      "education": {
+        "title": "Smart Education",
+        "desc": "Innovating educational models so every learner can access the most suitable learning path."
+      },
+      "sustainability": {
+        "title": "Sustainable Development",
+        "desc": "Leveraging AI technology to promote environmental protection and resource optimization, building a green future."
+      }
+    }
+  },
+  "tech_innovation": {
+    "title": "Co-Creation",
+    "subtitle": "Open Collaboration Platform",
+    "desc": "Co-creating the intelligent protocols of tomorrow, making innovation accessible to everyone.",
+    "intro": "Taichu Lab believes in the power of open collaboration. We've established a global innovation platform that brings together wisdom from all fields to explore the boundaries of technology.",
+    "programs": {
+      "open_source": {
+        "title": "Open Source Initiative",
+        "desc": "Our core algorithms and tools are open to developers worldwide, jointly driving technological progress."
+      },
+      "incubator": {
+        "title": "Innovation Incubator",
+        "desc": "Providing resources, guidance, and funding support for promising innovative projects."
+      },
+      "research_collab": {
+        "title": "Research Collaboration",
+        "desc": "Building partnerships with top global research institutions and universities to tackle technical challenges together."
+      },
+      "community": {
+        "title": "Developer Community",
+        "desc": "Building an active technical community to promote knowledge sharing and collaborative innovation."
+      }
+    }
+  },
+  "social_experiment": {
+    "title": "Experiments",
+    "subtitle": "Exploring New Possibilities",
+    "desc": "Validating and iterating our concepts in real-world scenarios, creating positive social impact.",
+    "intro": "Theory needs practical validation. We conduct various social experiments in the real world, exploring how technology can better serve human society.",
+    "experiments": {
+      "smart_village": {
+        "title": "Smart Village",
+        "desc": "Deploying intelligent technology in remote areas to bridge the urban-rural digital divide."
+      },
+      "elder_care": {
+        "title": "Elder Care",
+        "desc": "Intelligent companionship and health monitoring systems designed for elderly populations."
+      },
+      "green_city": {
+        "title": "Green City",
+        "desc": "Using AI to optimize urban energy use and traffic flow, creating a low-carbon future."
+      },
+      "cultural_bridge": {
+        "title": "Cultural Bridge",
+        "desc": "Promoting cross-cultural understanding and exchange through AI technology, building a harmonious world."
+      }
+    }
+  },
+  "cta": {
+    "explore_research": "Explore Research",
+    "our_mission": "Our Mission",
+    "view_all_domains": "View All Domains",
+    "explore": "Explore",
+    "discover": "Discover",
+    "join_us": "Join Us",
+    "learn_more": "Learn More",
+    "ready_title": "Ready to Begin Your Intelligence Journey?",
+    "ready_desc": "Join us to explore the boundaries of intelligence and create a better future together.",
+    "start_exploring": "Start Exploring",
+    "contact_us": "Contact Us",
+    "back_home": "Back to Home"
+  },
+  "footer": {
+    "copyright": "© 2025 Taichu Lab",
+    "tagline": "Illuminating Future Intelligence"
+  }
 }

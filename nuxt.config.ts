@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   app: {
     head: {
-      title: '太初实验室 - 探索未知始于太初',
+      title: '太初元启 - Taichu Lab',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -33,7 +33,14 @@ export default defineNuxtConfig({
     lazy: true,
     langDir: 'locales',
     defaultLocale: 'zh',
-    strategy: 'prefix_except_default',
+    strategy: 'no_prefix',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_locale',
+      cookieCrossOrigin: true,
+      alwaysRedirect: false,
+      fallbackLocale: 'zh',
+    },
   },
   usebootstrap: {
     scss: true,
